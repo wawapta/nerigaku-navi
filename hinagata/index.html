@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="練馬区小学校PTA連合協議会が提供するPTA運営のひな型集。会則・総会資料・入会届・会計書類等を掲載。">
+  <title>ひな型集 ｜ ねりがくナビ</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, var(--color-blue-main) 0%, #104e7a 100%);
+      color: white;
+      padding: var(--space-lg) var(--space-md);
+    }
+    .page-hero-inner { max-width: var(--max-width); margin: 0 auto; }
+    .page-hero h1 { font-size: var(--font-size-xl); font-weight: 800; }
+    .page-hero p { font-size: var(--font-size-sm); opacity: 0.85; margin-top: 4px; }
+
+    .hinagata-note {
+      background: var(--color-blue-light);
+      border-left: 3px solid var(--color-blue-main);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: var(--space-sm) var(--space-md);
+      font-size: var(--font-size-sm);
+      color: var(--color-blue-main);
+      margin-bottom: var(--space-lg);
+    }
+
+    .hinagata-toc {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xs);
+      margin-bottom: var(--space-lg);
+    }
+    .toc-link {
+      background: var(--color-surface);
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 10px var(--space-sm);
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      color: var(--color-text-sub);
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .toc-link:hover { border-color: var(--color-blue-main); color: var(--color-blue-main); }
+
+    .hinagata-section { margin-bottom: var(--space-xl); scroll-margin-top: 80px; }
+    .hinagata-section-heading {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      background: var(--color-surface);
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      border-bottom: 2px solid var(--color-blue-main);
+      padding: var(--space-md);
+    }
+    .hinagata-section-heading h2 { font-size: var(--font-size-md); font-weight: 800; }
+    .hs-icon { font-size: 1.4rem; }
+
+    .hinagata-item {
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      padding: var(--space-md);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+    }
+    .hinagata-item:last-child {
+      border-bottom: none;
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+    }
+    .hinagata-item-text { flex: 1; }
+    .hinagata-item-title { font-weight: 700; margin-bottom: 4px; }
+    .hinagata-item-desc { font-size: var(--font-size-sm); color: var(--color-text-sub); }
+    .dl-btn {
+      flex-shrink: 0;
+      background: var(--color-blue-main);
+      color: white;
+      border-radius: var(--radius-sm);
+      padding: 8px 14px;
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity 0.15s;
+    }
+    .dl-btn:hover { opacity: 0.85; }
+    .dl-btn.disabled {
+      background: var(--color-border);
+      color: var(--color-text-muted);
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .tsuzuru-section {
+      background: linear-gradient(135deg, var(--color-green-main) 0%, #1f6f5c 100%);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg) var(--space-md);
+      margin-bottom: var(--space-xl);
+      color: white;
+    }
+    .tsuzuru-section h2 { font-size: var(--font-size-md); font-weight: 800; margin-bottom: var(--space-xs); }
+    .tsuzuru-section p { font-size: var(--font-size-sm); opacity: 0.9; margin-bottom: var(--space-md); }
+    .tsuzuru-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: white;
+      color: var(--color-green-main);
+      border-radius: var(--radius-sm);
+      padding: 10px var(--space-md);
+      font-weight: 800;
+      font-size: var(--font-size-base);
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .tsuzuru-btn:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <div class="header-brand">
+      <a href="/" style="color:white; text-decoration:none;">
+        <div class="site-name">ねりがくナビ</div>
+        <div class="site-tagline">練馬区の学校・子育て情報を探しやすく</div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <h1>📁 小P連 ひな型集</h1>
+    <p>PTA運営に役立つ各種書式・ひな型を提供しています（練馬区小P連）</p>
+  </div>
+</div>
+
+<main>
+  <div class="section">
+    <div class="section-inner">
+
+      <div class="hinagata-note">
+        📌 ひな型はGoogle Driveで公開しています。リンクをクリックするとGoogle Driveのダウンロードページへ移動します。
+      </div>
+
+      <!-- 目次 -->
+      <nav aria-label="ひな型カテゴリ">
+        <div class="hinagata-toc">
+          <a href="#rules" class="toc-link">📜 規約・会則</a>
+          <a href="#assembly" class="toc-link">📋 総会・役員</a>
+          <a href="#membership" class="toc-link">✉️ 入退会</a>
+          <a href="#accounting" class="toc-link">📊 会計</a>
+          <a href="#proposal" class="toc-link">📝 提言・要望</a>
+          <a href="#tsuzuru" class="toc-link">🧵 会計システム</a>
+        </div>
+      </nav>
+
+      <!-- 規約・会則 -->
+      <section id="rules" class="hinagata-section" aria-labelledby="cat-rules">
+        <div class="hinagata-section-heading">
+          <span class="hs-icon" aria-hidden="true">📜</span>
+          <h2 id="cat-rules">規約・会則関係</h2>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">PTA会則ひな型</div>
+            <div class="hinagata-item-desc">任意加入・個人情報取扱を含む標準的なPTA会則</div>
+          </div>
+          <a href="#" class="dl-btn disabled" aria-label="PTA会則ひな型（準備中）">準備中</a>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">個人情報取扱規程ひな型</div>
+            <div class="hinagata-item-desc">PTA活動における個人情報の取扱規程</div>
+          </div>
+          <a href="#" class="dl-btn disabled" aria-label="個人情報取扱規程ひな型（準備中）">準備中</a>
+        </div>
+      </section>
+
+      <!-- 総会・役員 -->
+      <section id="assembly" class="hinagata-section" aria-labelledby="cat-assembly">
+        <div class="hinagata-section-heading">
+          <span class="hs-icon" aria-hidden="true">📋</span>
+          <h2 id="cat-assembly">総会・役員関係</h2>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">総会次第ひな型</div>
+            <div class="hinagata-item-desc">定期総会・臨時総会の進行次第</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">議案書ひな型</div>
+            <div class="hinagata-item-desc">総会議案書（事業計画・予算案等）の様式</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">委任状・書面表決書ひな型</div>
+            <div class="hinagata-item-desc">欠席者向けの委任状および書面表決書</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+      </section>
+
+      <!-- 入退会 -->
+      <section id="membership" class="hinagata-section" aria-labelledby="cat-membership">
+        <div class="hinagata-section-heading">
+          <span class="hs-icon" aria-hidden="true">✉️</span>
+          <h2 id="cat-membership">入退会関係</h2>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">入会届ひな型</div>
+            <div class="hinagata-item-desc">任意加入を明示した入会届様式</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">退会届ひな型</div>
+            <div class="hinagata-item-desc">年度途中退会に対応した退会届様式</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">任意加入説明文ひな型</div>
+            <div class="hinagata-item-desc">入学説明会等で配布する任意加入の説明文</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+      </section>
+
+      <!-- 会計 -->
+      <section id="accounting" class="hinagata-section" aria-labelledby="cat-accounting">
+        <div class="hinagata-section-heading">
+          <span class="hs-icon" aria-hidden="true">📊</span>
+          <h2 id="cat-accounting">会計関係</h2>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">予算書ひな型</div>
+            <div class="hinagata-item-desc">年度予算書の標準様式</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">決算書ひな型</div>
+            <div class="hinagata-item-desc">年度決算書・収支報告書の標準様式</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">監査報告書ひな型</div>
+            <div class="hinagata-item-desc">会計監査報告書の様式</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+      </section>
+
+      <!-- 提言・要望 -->
+      <section id="proposal" class="hinagata-section" aria-labelledby="cat-proposal">
+        <div class="hinagata-section-heading">
+          <span class="hs-icon" aria-hidden="true">📝</span>
+          <h2 id="cat-proposal">提言・要望関係</h2>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">要望書ひな型</div>
+            <div class="hinagata-item-desc">学校・教育委員会への要望書様式</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+        <div class="hinagata-item">
+          <div class="hinagata-item-text">
+            <div class="hinagata-item-title">提言書ひな型</div>
+            <div class="hinagata-item-desc">提言書の標準様式</div>
+          </div>
+          <a href="#" class="dl-btn disabled">準備中</a>
+        </div>
+      </section>
+
+      <!-- Tsuzuru -->
+      <section id="tsuzuru" class="tsuzuru-section" aria-labelledby="cat-tsuzuru">
+        <h2 id="cat-tsuzuru">🧵 複数年度の会計管理なら Tsuzuru（つづる）</h2>
+        <p>
+          複数年度にわたる予算執行管理・決算比較・監査対応を一元化するPTA会計システムです。
+          会計書類ひな型の利用と合わせてご活用ください。
+        </p>
+        <a
+          href="https://wawapta.github.io/tsuzuru/"
+          class="tsuzuru-btn ext-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Tsuzuruを開く（外部リンク）"
+        >
+          🧵 Tsuzuruを開く
+        </a>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="site-name">ねりがくナビ</div>
+      <div class="site-tagline">練馬区の学校・子育て情報を探しやすく</div>
+    </div>
+    <p class="footer-disclaimer">
+      本サイトは<strong>練馬区小学校PTA連合協議会（小P連）</strong>が運営しています。<br>
+      本サイトは練馬区公式サイトではありません。
+    </p>
+  </div>
+</footer>
+
+<nav class="bottom-nav" role="navigation" aria-label="メインナビゲーション">
+  <a href="/" class="nav-item" aria-label="ホーム">
+    <span class="nav-icon" aria-hidden="true">🏠</span>
+    <span>ホーム</span>
+  </a>
+  <a href="/soudan/" class="nav-item" aria-label="相談先">
+    <span class="nav-icon" aria-hidden="true">💬</span>
+    <span>相談</span>
+  </a>
+  <a href="/news/" class="nav-item" aria-label="新着情報">
+    <span class="nav-icon" aria-hidden="true">📰</span>
+    <span>新着</span>
+  </a>
+  <a href="/menu/" class="nav-item active" aria-label="全メニュー" aria-current="page">
+    <span class="nav-icon" aria-hidden="true">☰</span>
+    <span>メニュー</span>
+  </a>
+</nav>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="練馬区内のいじめ・不登校・子育て・ネット・安全に関する相談先一覧。24時間対応窓口も掲載。">
+  <title>相談先 ｜ ねりがくナビ</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, #7b4fa8 0%, #5a3a80 100%);
+      color: white;
+      padding: var(--space-lg) var(--space-md);
+    }
+    .page-hero-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .page-hero h1 { font-size: var(--font-size-xl); font-weight: 800; }
+    .page-hero p { font-size: var(--font-size-sm); opacity: 0.85; margin-top: 4px; }
+
+    .soudan-toc {
+      background: var(--color-purple-light);
+      border-radius: var(--radius-md);
+      padding: var(--space-md);
+      margin-bottom: var(--space-lg);
+    }
+    .soudan-toc h2 {
+      font-size: var(--font-size-sm);
+      color: var(--color-purple);
+      font-weight: 700;
+      margin-bottom: var(--space-sm);
+    }
+    .toc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xs);
+    }
+    .toc-btn {
+      background: white;
+      border: 1.5px solid var(--color-purple);
+      color: var(--color-purple);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+    .toc-btn:hover { background: var(--color-purple); color: white; }
+
+    .soudan-category {
+      margin-bottom: var(--space-xl);
+      scroll-margin-top: 80px;
+    }
+    .category-heading {
+      background: var(--color-surface);
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      padding: var(--space-md);
+      border-bottom: 2px solid var(--color-purple);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    .category-heading h2 {
+      font-size: var(--font-size-md);
+      font-weight: 800;
+    }
+    .category-heading .cat-icon { font-size: 1.5rem; }
+
+    .soudan-card {
+      background: var(--color-surface);
+      padding: var(--space-md);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .soudan-card:last-child {
+      border-bottom: none;
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+    }
+    .soudan-card-name {
+      font-weight: 800;
+      font-size: var(--font-size-md);
+      margin-bottom: 4px;
+    }
+    .soudan-card-desc {
+      font-size: var(--font-size-sm);
+      color: var(--color-text-sub);
+      margin-bottom: var(--space-sm);
+    }
+    .soudan-card-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--color-purple-light);
+      color: var(--color-purple);
+      border-radius: var(--radius-sm);
+      padding: 8px 14px;
+      font-weight: 800;
+      font-size: var(--font-size-md);
+      margin-bottom: var(--space-sm);
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .soudan-card-phone:hover { background: #e4d7f7; }
+    .soudan-card-hours {
+      font-size: var(--font-size-xs);
+      color: var(--color-text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: var(--space-xs);
+    }
+    .soudan-card-urgent {
+      background: var(--color-red-light);
+      border-left: 3px solid var(--color-red-urgent);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 8px var(--space-sm);
+      font-size: var(--font-size-xs);
+      color: var(--color-red-urgent);
+      font-weight: 700;
+      margin-top: var(--space-sm);
+    }
+    .soudan-card-links {
+      display: flex;
+      gap: var(--space-xs);
+      margin-top: var(--space-sm);
+      flex-wrap: wrap;
+    }
+    .link-btn {
+      font-size: var(--font-size-xs);
+      padding: 5px 10px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--color-border);
+      color: var(--color-text-sub);
+      text-decoration: none;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .link-btn:hover { border-color: var(--color-purple); color: var(--color-purple); }
+    .link-btn.web { border-color: var(--color-blue-main); color: var(--color-blue-main); }
+
+    .emergency-banner {
+      background: var(--color-red-urgent);
+      color: white;
+      border-radius: var(--radius-md);
+      padding: var(--space-md);
+      margin-bottom: var(--space-lg);
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+    .emergency-banner .eb-icon { font-size: 2rem; flex-shrink: 0; }
+    .emergency-banner .eb-text { flex: 1; }
+    .emergency-banner .eb-title { font-weight: 800; font-size: var(--font-size-md); }
+    .emergency-banner .eb-sub { font-size: var(--font-size-xs); opacity: 0.9; margin-top: 2px; }
+    .emergency-banner a {
+      background: white;
+      color: var(--color-red-urgent);
+      border-radius: var(--radius-sm);
+      padding: 8px 14px;
+      font-weight: 800;
+      font-size: var(--font-size-md);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <div class="header-brand">
+      <a href="/" style="color:white; text-decoration:none;">
+        <div class="site-name">ねりがくナビ</div>
+        <div class="site-tagline">練馬区の学校・子育て情報を探しやすく</div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <h1>💬 困ったときの相談先</h1>
+    <p>いじめ・不登校・子育て・ネット・安全に関する相談窓口をまとめました</p>
+  </div>
+</div>
+
+<main>
+  <div class="section">
+    <div class="section-inner">
+
+      <!-- 緊急バナー -->
+      <div class="emergency-banner" role="alert">
+        <span class="eb-icon" aria-hidden="true">🚨</span>
+        <div class="eb-text">
+          <div class="eb-title">緊急の場合・危険を感じたら</div>
+          <div class="eb-sub">まず警察（110番）または消防・救急（119番）へ</div>
+        </div>
+        <a href="tel:110" aria-label="警察に電話：110">110番</a>
+      </div>
+
+      <!-- 目次 -->
+      <div class="soudan-toc">
+        <h2>カテゴリから探す</h2>
+        <div class="toc-grid">
+          <a href="#school" class="toc-btn">📚 学校生活</a>
+          <a href="#family" class="toc-btn">👨‍👩‍👧 家庭・子育て</a>
+          <a href="#net" class="toc-btn">📱 ネット・スマホ</a>
+          <a href="#safety" class="toc-btn">🚨 安全・被害</a>
+        </div>
+      </div>
+
+      <!-- 学校生活 -->
+      <section id="school" class="soudan-category" aria-labelledby="cat-school">
+        <div class="category-heading">
+          <span class="cat-icon" aria-hidden="true">📚</span>
+          <h2 id="cat-school">学校生活（いじめ・不登校・友人関係）</h2>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">練馬区 教育相談室</div>
+          <div class="soudan-card-desc">いじめ・不登校・学校生活の悩みについて、専門の相談員に相談できます。</div>
+          <a href="tel:0359844763" class="soudan-card-phone" aria-label="練馬区教育相談室に電話">
+            📞 03-5984-4763
+          </a>
+          <div class="soudan-card-hours">🕐 月〜金 9:00〜17:00（祝日・年末年始除く）</div>
+          <div class="soudan-card-links">
+            <a href="https://www.city.nerima.tokyo.jp/kosodate/gakko/kyoikusodan/" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">公式サイト</a>
+          </div>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">24時間子どもSOSダイヤル</div>
+          <div class="soudan-card-desc">いじめ・不登校など、子どもに関する緊急相談。全国共通・無料。</div>
+          <a href="tel:0120078310" class="soudan-card-phone" aria-label="24時間子どもSOSダイヤルに電話">
+            📞 0120-0-78310（無料）
+          </a>
+          <div class="soudan-card-hours">🕐 24時間・365日</div>
+          <div class="soudan-card-urgent">⚠️ 深刻ないじめや緊急時はすぐにこちらへ</div>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">東京都教育相談センター（ここてらす）</div>
+          <div class="soudan-card-desc">不登校・発達・学習困難など、教育全般の相談。電話・LINEで相談可。</div>
+          <a href="tel:0120538288" class="soudan-card-phone" aria-label="東京都教育相談センターに電話">
+            📞 0120-53-8288（無料）
+          </a>
+          <div class="soudan-card-hours">🕐 月〜土 9:00〜21:00（祝日・年末年始除く）</div>
+          <div class="soudan-card-links">
+            <a href="https://www.kyoiku.metro.tokyo.lg.jp/school/document/special_support/kokoteras.html" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">公式サイト・LINE相談</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 家庭・子育て -->
+      <section id="family" class="soudan-category" aria-labelledby="cat-family">
+        <div class="category-heading">
+          <span class="cat-icon" aria-hidden="true">👨‍👩‍👧</span>
+          <h2 id="cat-family">家庭・子育て（虐待・子育ての悩み）</h2>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">練馬区 子ども家庭支援センター</div>
+          <div class="soudan-card-desc">子育ての悩み・虐待通告・家族関係の相談。地域の専門機関が対応します。</div>
+          <a href="tel:0359127370" class="soudan-card-phone" aria-label="練馬区子ども家庭支援センターに電話">
+            📞 03-5912-7370
+          </a>
+          <div class="soudan-card-hours">🕐 月〜土 8:30〜17:00（祝日・年末年始除く）</div>
+          <div class="soudan-card-urgent">⚠️ 虐待を受けている子どもを発見した場合はすぐに通告を</div>
+          <div class="soudan-card-links">
+            <a href="https://www.city.nerima.tokyo.jp/kosodate/sodan/kodomokateishien/" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">公式サイト</a>
+          </div>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">児童相談所 虐待対応ダイヤル 189（いちはやく）</div>
+          <div class="soudan-card-desc">虐待通告・緊急相談の全国共通ダイヤル。無料で24時間つながります。</div>
+          <a href="tel:189" class="soudan-card-phone" aria-label="虐待対応ダイヤル189に電話">
+            📞 189（いちはやく）
+          </a>
+          <div class="soudan-card-hours">🕐 24時間・365日（無料）</div>
+          <div class="soudan-card-urgent">⚠️ 虐待が疑われる場合、通告は義務です。迷わずかけてください</div>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">練馬区立 子育てのひろば</div>
+          <div class="soudan-card-desc">子育ての悩み・仲間づくり・情報提供。区内各所に設置されています。</div>
+          <div class="soudan-card-hours">🕐 施設により異なります</div>
+          <div class="soudan-card-links">
+            <a href="https://www.city.nerima.tokyo.jp/kosodate/sodan/hiroba/" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">施設一覧を見る</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ネット・スマホ -->
+      <section id="net" class="soudan-category" aria-labelledby="cat-net">
+        <div class="category-heading">
+          <span class="cat-icon" aria-hidden="true">📱</span>
+          <h2 id="cat-net">ネット・スマホ（SNSトラブル・犯罪被害）</h2>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">東京都 インターネット利用環境づくり相談窓口</div>
+          <div class="soudan-card-desc">SNSトラブル・ネットいじめ・個人情報漏洩などの相談。</div>
+          <a href="tel:0353207753" class="soudan-card-phone" aria-label="東京都ネット相談窓口に電話">
+            📞 03-5320-7753
+          </a>
+          <div class="soudan-card-hours">🕐 月〜金 9:00〜17:00（祝日・年末年始除く）</div>
+          <div class="soudan-card-links">
+            <a href="https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2022/09/01/04.html" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">詳細</a>
+          </div>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">警察 サイバー犯罪相談窓口</div>
+          <div class="soudan-card-desc">ネット詐欺・闇バイト・犯罪被害などサイバー犯罪の相談。</div>
+          <a href="tel:9110" class="soudan-card-phone" aria-label="警察相談ダイヤル#9110に電話">
+            📞 #9110（警察相談）
+          </a>
+          <div class="soudan-card-hours">🕐 24時間（緊急時は110番）</div>
+          <div class="soudan-card-urgent">⚠️ 身に危険が及ぶ場合はすぐに110番へ</div>
+          <div class="soudan-card-links">
+            <a href="https://www.npa.go.jp/bureau/cyber/soudan.html" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">公式サイト</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 安全・被害 -->
+      <section id="safety" class="soudan-category" aria-labelledby="cat-safety">
+        <div class="category-heading">
+          <span class="cat-icon" aria-hidden="true">🚨</span>
+          <h2 id="cat-safety">安全・被害（不審者・非行・性被害）</h2>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">練馬警察署・光が丘警察署</div>
+          <div class="soudan-card-desc">不審者情報・非行・犯罪被害の相談・届出。区内の警察署が対応します。</div>
+          <a href="tel:0339920110" class="soudan-card-phone" aria-label="練馬警察署に電話">
+            📞 練馬：03-3992-0110
+          </a>
+          <a href="tel:0339760110" class="soudan-card-phone" aria-label="光が丘警察署に電話" style="margin-top: 4px;">
+            📞 光が丘：03-3976-0110
+          </a>
+          <div class="soudan-card-hours">🕐 24時間</div>
+          <div class="soudan-card-urgent">⚠️ 緊急時は110番</div>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">性犯罪・性暴力被害者のためのワンストップ支援センター（東京）</div>
+          <div class="soudan-card-desc">性被害の相談・医療・法律的支援を一括して提供。被害直後の証拠保全も対応。</div>
+          <a href="tel:0356070799" class="soudan-card-phone" aria-label="東京都ワンストップ支援センターに電話">
+            📞 03-5607-0799
+          </a>
+          <div class="soudan-card-hours">🕐 24時間（相談のみ）</div>
+          <div class="soudan-card-urgent">⚠️ 被害直後でも、時間が経ってからでも相談できます</div>
+          <div class="soudan-card-links">
+            <a href="https://sarc-tokyo.org/" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">公式サイト</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="site-name">ねりがくナビ</div>
+      <div class="site-tagline">練馬区の学校・子育て情報を探しやすく</div>
+    </div>
+    <p class="footer-disclaimer">
+      本サイトは<strong>練馬区小学校PTA連合協議会（小P連）</strong>が運営しています。<br>
+      本サイトは練馬区公式サイトではありません。掲載情報は定期的に確認していますが、必ずリンク先の公式情報もご確認ください。
+    </p>
+  </div>
+</footer>
+
+<nav class="bottom-nav" role="navigation" aria-label="メインナビゲーション">
+  <a href="/" class="nav-item" aria-label="ホーム">
+    <span class="nav-icon" aria-hidden="true">🏠</span>
+    <span>ホーム</span>
+  </a>
+  <a href="/soudan/" class="nav-item active" aria-label="相談先" aria-current="page">
+    <span class="nav-icon" aria-hidden="true">💬</span>
+    <span>相談</span>
+  </a>
+  <a href="/news/" class="nav-item" aria-label="新着情報">
+    <span class="nav-icon" aria-hidden="true">📰</span>
+    <span>新着</span>
+  </a>
+  <a href="/menu/" class="nav-item" aria-label="全メニュー">
+    <span class="nav-icon" aria-hidden="true">☰</span>
+    <span>メニュー</span>
+  </a>
+</nav>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

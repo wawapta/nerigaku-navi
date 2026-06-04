@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="練馬区の学校・教育・子育て情報を保護者目線で整理した情報ナビ。気象警報・相談先・新着情報・PTA運営ひな型を掲載。">
+  <title>ねりがくナビ｜練馬区の学校・子育て情報を探しやすく</title>
+  <meta property="og:title"       content="ねりがくナビ">
+  <meta property="og:description" content="練馬区の学校・子育て情報を保護者目線で整理した情報ナビ">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://nerigaku.com/">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+</head>
+<body>
+
+<!-- ═══════════════ ヘッダー ═══════════════ -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="site-name">ねりがくナビ</div>
+      <div class="site-tagline">練馬区の学校・子育て情報を探しやすく</div>
+    </div>
+    <div class="header-actions">
+      <button class="header-btn" id="search-toggle-btn" aria-label="検索">
+        <span class="icon">🔍</span><span>検索</span>
+      </button>
+      <a href="/menu/" class="header-btn" aria-label="全メニュー">
+        <span class="icon">☰</span><span>メニュー</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════ 検索エリア ═══════════════ -->
+<section class="search-section" role="search" aria-label="サイト内検索">
+  <div class="search-inner">
+    <div class="search-box">
+      <input type="search" id="search-input"
+             placeholder="🔍 学校名・キーワードで探す"
+             aria-label="キーワードを入力して検索"
+             autocomplete="off">
+      <button class="search-btn" id="search-btn" aria-label="検索">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- 検索結果（動的） -->
+<div class="search-results" id="search-results" role="region" aria-label="検索結果" aria-live="polite"></div>
+
+<!-- ═══════════════ クイック導線 ═══════════════ -->
+<nav class="quick-nav" aria-label="クイックメニュー">
+  <div class="quick-nav-inner">
+    <div class="quick-btn school disabled" aria-disabled="true">
+      <span class="q-icon">🏫</span>
+      <span class="q-label">学校を探す</span>
+    </div>
+    <a href="/soudan/" class="quick-btn blue">
+      <span class="q-icon">💬</span>
+      <span class="q-label">相談先</span>
+    </a>
+    <a href="/news/" class="quick-btn orange">
+      <span class="q-icon">📢</span>
+      <span class="q-label">新着情報</span>
+    </a>
+  </div>
+</nav>
+
+<!-- ═══════════════ いま確認する ═══════════════ -->
+<section class="section" aria-labelledby="ttl-ima">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title" id="ttl-ima">
+        <span class="st-bar"></span>いま確認する
+      </h2>
+    </div>
+    <div class="imakakunin-grid">
+
+      <a href="https://www.jma.go.jp/bosai/warning/#area_type=offices&area_code=130000"
+         class="ima-card weather" target="_blank" rel="noopener noreferrer"
+         aria-label="気象警報・注意報（外部リンク）">
+        <span class="ic-icon">⛈️</span>
+        <span class="ic-label">気象警報・<br>注意報</span>
+        <span class="ic-arrow">›</span>
+      </a>
+
+      <a href="https://www.wbgt.env.go.jp/alert.php"
+         class="ima-card heat" target="_blank" rel="noopener noreferrer"
+         aria-label="熱中症アラート（外部リンク）">
+        <span class="ic-icon">☀️</span>
+        <span class="ic-label">熱中症<br>アラート</span>
+        <span class="ic-arrow">›</span>
+      </a>
+
+      <a href="https://www.city.nerima.tokyo.jp/kosodate/gakko/rinjikyugyo/"
+         class="ima-card school" target="_blank" rel="noopener noreferrer"
+         aria-label="学級閉鎖情報（外部リンク）">
+        <span class="ic-icon">📋</span>
+        <span class="ic-label">学級閉鎖<br>情報</span>
+        <span class="ic-arrow">›</span>
+      </a>
+
+      <a href="https://www.city.nerima.tokyo.jp/kurashi/bosai/anzen/nerima-mail/"
+         class="ima-card safety" target="_blank" rel="noopener noreferrer"
+         aria-label="不審者情報（外部リンク）">
+        <span class="ic-icon">🔔</span>
+        <span class="ic-label">不審者<br>情報</span>
+        <span class="ic-arrow">›</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 困ったときの連絡先 ═══════════════ -->
+<section class="section" aria-labelledby="ttl-soudan">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title" id="ttl-soudan">
+        <span class="st-bar"></span>困ったときの連絡先
+      </h2>
+    </div>
+    <div class="soudan-chips" role="list">
+      <a href="/soudan/#school"  class="soudan-chip ijime"    role="listitem" aria-label="いじめ・不登校">
+        <span class="chip-icon">😟</span>
+        <span class="chip-label">いじめ・<br>不登校</span>
+      </a>
+      <a href="/soudan/#school"  class="soudan-chip kyoiku"   role="listitem" aria-label="教育相談">
+        <span class="chip-icon">📚</span>
+        <span class="chip-label">教育相談</span>
+      </a>
+      <a href="/soudan/#family"  class="soudan-chip kosodate" role="listitem" aria-label="子育て相談">
+        <span class="chip-icon">👨‍👩‍👧</span>
+        <span class="chip-label">子育て相談</span>
+      </a>
+      <a href="/soudan/#family"  class="soudan-chip gyakutai" role="listitem" aria-label="虐待・通告">
+        <span class="chip-icon">🆘</span>
+        <span class="chip-label">虐待・通告</span>
+      </a>
+      <a href="/soudan/#net"     class="soudan-chip net"      role="listitem" aria-label="ネット・スマホ">
+        <span class="chip-icon">📱</span>
+        <span class="chip-label">ネット・<br>スマホ</span>
+      </a>
+      <a href="/soudan/#safety"  class="soudan-chip higai"    role="listitem" aria-label="非行・犯罪被害">
+        <span class="chip-icon">🚨</span>
+        <span class="chip-label">非行・<br>犯罪被害</span>
+      </a>
+    </div>
+    <a href="/soudan/" class="soudan-more-btn" aria-label="相談先一覧を見る">
+      <span>相談先一覧を見る</span>
+      <span class="smb-arrow">›</span>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════ 練馬区 子育て・教育 新着 ═══════════════ -->
+<section class="section" aria-labelledby="ttl-nerima-news">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title" id="ttl-nerima-news">
+        <span class="st-bar"></span>
+        <span class="st-icon">📅</span>
+        練馬区 子育て・教育 新着
+        <span class="badge-new" aria-label="新着">NEW</span>
+      </h2>
+      <a href="https://www.city.nerima.tokyo.jp/kosodate/" class="section-more ext-badge"
+         target="_blank" rel="noopener noreferrer" aria-label="練馬区公式サイト">公式 ›</a>
+    </div>
+    <div class="news-block">
+      <div class="news-list" id="rss-nerima-news" role="list" aria-live="polite">
+        <div class="news-loading">読み込み中…</div>
+      </div>
+      <div class="news-more"><a href="/news/">もっと見る ›</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 練馬区 イベント情報 ═══════════════ -->
+<section class="section" aria-labelledby="ttl-nerima-events">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title" id="ttl-nerima-events">
+        <span class="st-bar orange"></span>
+        <span class="st-icon">📅</span>
+        練馬区 イベント情報
+      </h2>
+      <a href="https://www.city.nerima.tokyo.jp/event/" class="section-more ext-badge"
+         target="_blank" rel="noopener noreferrer" aria-label="練馬区イベント情報">公式 ›</a>
+    </div>
+    <div class="news-block">
+      <div class="news-list" id="rss-nerima-events" role="list" aria-live="polite">
+        <div class="news-loading">読み込み中…</div>
+      </div>
+      <div class="news-more"><a href="/news/#events">もっと見る ›</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 小P連 note ═══════════════ -->
+<section class="section" aria-labelledby="ttl-kopren-note">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title" id="ttl-kopren-note">
+        <span class="st-bar purple"></span>
+        <span class="st-icon">📝</span>
+        小P連 note
+      </h2>
+      <a href="https://note.com/atama_no_nakami" class="section-more ext-badge"
+         target="_blank" rel="noopener noreferrer" aria-label="小P連note">noteを見る ›</a>
+    </div>
+    <div class="news-block">
+      <div class="news-list" id="rss-kopren-note" role="list" aria-live="polite">
+        <div class="news-loading">読み込み中…</div>
+      </div>
+      <div class="news-more"><a href="https://note.com/atama_no_nakami" target="_blank" rel="noopener noreferrer">もっと見る ›</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ 小P連 情報提供 ═══════════════ -->
+<section class="section" aria-labelledby="ttl-hinagata">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title" id="ttl-hinagata">
+        <span class="st-bar blue"></span>小P連 情報提供
+      </h2>
+    </div>
+    <div class="hinagata-chips" role="list">
+      <a href="/hinagata/#rules"      class="hinagata-chip" role="listitem" aria-label="会則ひな型">
+        <span class="hc-icon">📄</span>
+        <span class="hc-label">会則<br>ひな型</span>
+      </a>
+      <a href="/hinagata/#assembly"   class="hinagata-chip" role="listitem" aria-label="総会資料ひな型">
+        <span class="hc-icon">👥</span>
+        <span class="hc-label">総会資料<br>ひな型</span>
+      </a>
+      <a href="/hinagata/#membership" class="hinagata-chip" role="listitem" aria-label="入会届ひな型">
+        <span class="hc-icon">✏️</span>
+        <span class="hc-label">入会届<br>ひな型</span>
+      </a>
+      <a href="/hinagata/#accounting" class="hinagata-chip" role="listitem" aria-label="会計資料ひな型">
+        <span class="hc-icon">🧮</span>
+        <span class="hc-label">会計資料<br>ひな型</span>
+      </a>
+    </div>
+    <a href="/hinagata/" class="hinagata-more-btn" aria-label="ひな型集を見る">
+      <span>ひな型集を見る</span>
+      <span class="hmb-arrow">›</span>
+    </a>
+  </div>
+</section>
+
+<div class="spacer-md"></div>
+
+<!-- ═══════════════ フッター ═══════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="site-name">ねりがくナビ</div>
+      <div class="site-tagline">練馬区の学校・子育て情報を探しやすく</div>
+    </div>
+    <p class="footer-disclaimer">
+      本サイトは<strong>練馬区小学校PTA連合協議会（小P連）</strong>が運営しています。<br>
+      本サイトは練馬区公式サイトではありません。<br>
+      掲載情報の正確性・最新性は必ずリンク先の公式情報でご確認ください。<br>
+      <a href="https://www.city.nerima.tokyo.jp/" target="_blank" rel="noopener noreferrer">練馬区公式ホームページ ↗</a>
+    </p>
+  </div>
+</footer>
+
+<!-- ═══════════════ 下部固定ナビ（5項目）═══════════════ -->
+<nav class="bottom-nav" role="navigation" aria-label="メインナビゲーション">
+  <a href="/"        class="nav-item active" aria-label="ホーム"    aria-current="page">
+    <span class="nav-icon">🏠</span><span>ホーム</span>
+  </a>
+  <a href="/school/" class="nav-item"        aria-label="学校">
+    <span class="nav-icon">🏫</span><span>学校</span>
+  </a>
+  <a href="/soudan/" class="nav-item"        aria-label="相談">
+    <span class="nav-icon">💬</span><span>相談</span>
+  </a>
+  <a href="/news/"   class="nav-item"        aria-label="新着">
+    <span class="nav-icon">🔔</span><span>新着</span>
+  </a>
+  <a href="/menu/"   class="nav-item"        aria-label="メニュー">
+    <span class="nav-icon">•••</span><span>メニュー</span>
+  </a>
+</nav>
+
+<script src="/js/main.js"></script>
+<script>
+// RSS ドット色の付与
+function renderRssItems(items, containerId, dotClass) {
+  const el = document.getElementById(containerId);
+  if (!el || !items.length) return;
+  el.innerHTML = '';
+  items.forEach(item => {
+    const a = document.createElement('a');
+    a.className = 'news-item';
+    a.href = item.url || '#';
+    a.target = '_blank'; a.rel = 'noopener noreferrer';
+    const date = item.date || '';
+    a.innerHTML = `
+      <span class="news-dot ${dotClass}"></span>
+      <span class="news-date">${date}</span>
+      <span class="news-title">${item.title || ''}</span>
+      <span class="news-arrow">›</span>`;
+    el.appendChild(a);
+  });
+}
+// main.js の loadRssSection を上書き拡張
+window.addEventListener('DOMContentLoaded', () => {
+  const sections = [
+    { path:'/data/nerima-news.json',   id:'rss-nerima-news',   dot:'',       n:5 },
+    { path:'/data/nerima-events.json', id:'rss-nerima-events', dot:'orange', n:3 },
+    { path:'/data/kopren-note.json',   id:'rss-kopren-note',   dot:'purple', n:3 },
+  ];
+  sections.forEach(({ path, id, dot, n }) => {
+    fetch(path + '?_=' + Date.now())
+      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(data => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const items = (data.items || []).slice(0, n);
+        if (!items.length) {
+          el.innerHTML = '<div class="news-error">情報を取得できませんでした</div>';
+          return;
+        }
+        el.innerHTML = '';
+        items.forEach(item => {
+          const a = document.createElement('a');
+          a.className = 'news-item';
+          a.href = item.url || '#';
+          a.target = '_blank'; a.rel = 'noopener noreferrer';
+          const d = item.date ? item.date.slice(5) : ''; // MM-DD
+          a.innerHTML = `
+            <span class="news-dot ${dot}"></span>
+            <span class="news-date">${d}</span>
+            <span class="news-title">${item.title || ''}</span>
+            <span class="news-arrow">›</span>`;
+          el.appendChild(a);
+        });
+      })
+      .catch(() => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = '<div class="news-error">情報を取得できませんでした</div>';
+      });
+  });
+});
+</script>
+</body>
+</html>

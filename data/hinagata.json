@@ -1,0 +1,98 @@
+[
+  {
+    "id": "h1",
+    "category": "rules",
+    "title": "PTA会則ひな型",
+    "description": "任意加入・個人情報取扱を含む標準的なPTA会則",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["会則", "規約", "任意加入"]
+  },
+  {
+    "id": "h2",
+    "category": "rules",
+    "title": "個人情報取扱規程ひな型",
+    "description": "PTA活動における個人情報の取扱規程",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["個人情報", "規程", "プライバシー"]
+  },
+  {
+    "id": "h3",
+    "category": "assembly",
+    "title": "総会次第ひな型",
+    "description": "定期総会・臨時総会の進行次第",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["総会", "次第", "進行"]
+  },
+  {
+    "id": "h4",
+    "category": "assembly",
+    "title": "議案書ひな型",
+    "description": "総会議案書（事業計画・予算案等）の様式",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["総会", "議案書", "事業計画"]
+  },
+  {
+    "id": "h5",
+    "category": "assembly",
+    "title": "委任状・書面表決書ひな型",
+    "description": "欠席者向けの委任状および書面表決書",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["委任状", "書面表決", "総会"]
+  },
+  {
+    "id": "h6",
+    "category": "membership",
+    "title": "入会届ひな型",
+    "description": "任意加入を明示した入会届様式",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["入会届", "任意加入", "入学"]
+  },
+  {
+    "id": "h7",
+    "category": "membership",
+    "title": "退会届ひな型",
+    "description": "年度途中退会に対応した退会届様式",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["退会届", "任意加入"]
+  },
+  {
+    "id": "h8",
+    "category": "membership",
+    "title": "任意加入説明文ひな型",
+    "description": "入学説明会等で配布する任意加入の説明文",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["任意加入", "説明文", "新入生"]
+  },
+  {
+    "id": "h9",
+    "category": "accounting",
+    "title": "予算書ひな型",
+    "description": "年度予算書の標準様式",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["予算書", "会計", "総会"]
+  },
+  {
+    "id": "h10",
+    "category": "accounting",
+    "title": "決算書ひな型",
+    "description": "年度決算書・収支報告書の標準様式",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["決算書", "会計", "収支報告"]
+  },
+  {
+    "id": "h11",
+    "category": "accounting",
+    "title": "監査報告書ひな型",
+    "description": "会計監査報告書の様式",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["監査", "会計", "報告書"]
+  },
+  {
+    "id": "h12",
+    "category": "proposal",
+    "title": "要望書ひな型",
+    "description": "学校・教育委員会への要望書様式",
+    "url": "PLACEHOLDER_DRIVE_URL",
+    "tags": ["要望書", "提言", "教育委員会"]
+  }
+]
