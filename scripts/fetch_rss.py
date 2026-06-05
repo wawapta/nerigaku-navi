@@ -169,9 +169,9 @@ def scrape_nerima(source):
 # ========================================
 SOURCES = [
     {
-        "type": "rss",
+        "type": "scrape",
         "label": "nerima-news",
-        "url": "https://www.city.nerima.tokyo.jp/rss_news.xml",
+        "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/index.html",
         "output": "data/nerima-news.json",
     },
     {
