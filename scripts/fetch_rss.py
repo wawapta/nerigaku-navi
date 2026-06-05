@@ -169,15 +169,15 @@ def scrape_nerima(source):
 # ========================================
 SOURCES = [
     {
-        "type": "scrape",
+        "type": "rss",
         "label": "nerima-news",
-        "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/index.html",
+        "url": "https://www.city.nerima.tokyo.jp/rss_news.xml",
         "output": "data/nerima-news.json",
     },
     {
-        "type": "scrape",
+        "type": "rss",
         "label": "nerima-events",
-        "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/event/index.html",
+        "url": "https://www.city.nerima.tokyo.jp/rss/event/rss_news.xml",
         "output": "data/nerima-events.json",
     },
     {
