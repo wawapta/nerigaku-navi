@@ -19,12 +19,12 @@ RSS_SOURCES = [
         "label": "nerima-news",
     },
     {
-        "url": "https://www.city.nerima.tokyo.jp/rss/event.rss",
+        "url": "https://www.city.nerima.tokyo.jp/rss/event/rss_news.xml",
         "output": "data/nerima-events.json",
         "label": "nerima-events",
     },
     {
-        "url": "https://note.com/atama_no_nakami/rss",
+        "url": "https://note.com/nerima_syoup/rss",
         "output": "data/kopren-note.json",
         "label": "kopren-note",
     },
