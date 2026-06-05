@@ -2,9 +2,9 @@ name: RSS Cache Update
 
 on:
   schedule:
-    # 1日4回: 6:00, 11:00, 15:00, 20:00 JST (UTC-9h)
+    # 1日4回: 6:00, 11:00, 15:00, 20:00 JST
     - cron: '0 21,2,6,11 * * *'
-  workflow_dispatch:  # 手動実行も可能
+  workflow_dispatch:
 
 jobs:
   fetch-rss:
@@ -22,9 +22,9 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests feedparser
+        run: pip install requests feedparser beautifulsoup4
 
-      - name: Fetch RSS feeds
+      - name: Fetch RSS / Scrape
         run: python scripts/fetch_rss.py
 
       - name: Commit and push JSON cache
@@ -35,6 +35,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: update RSS cache [$(date '+%Y-%m-%d %H:%M JST')]"
+            git commit -m "chore: update news cache [$(date '+%Y-%m-%d %H:%M JST')]"
             git push
           fi
