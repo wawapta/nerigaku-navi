@@ -14,7 +14,7 @@ JST = timezone(timedelta(hours=9))
 
 RSS_SOURCES = [
     {
-        "url": "https://www.city.nerima.tokyo.jp/rss/kosodate-kyoiku.rss",
+        "url": "https://www.city.nerima.tokyo.jp/rss/kosodatekyoiku/rss_news.xml",
         "output": "data/nerima-news.json",
         "label": "nerima-news",
     },
