@@ -133,6 +133,49 @@ def scrape_nerima(source):
 
 
 # ========================================
+# イベントスクレイピング（練馬区トップページ イベントタブ）
+# ========================================
+def scrape_event(source):
+    label = source["label"]
+    url = source["url"]
+    base = "https://www.city.nerima.tokyo.jp"
+    print(f"[{label}] Scraping event tab: {url}")
+
+    try:
+        if not BS4_AVAILABLE:
+            raise ImportError("beautifulsoup4 not installed")
+
+        html = fetch_html(url)
+        soup = BeautifulSoup(html, "html.parser")
+        items = []
+
+        # 構造: div#TAB1_2BOX > ul.linklist.event-li > li > a
+        tab = soup.find(id="TAB1_2BOX")
+        if not tab:
+            # フォールバック: ul.linklist.event-li を直接探す
+            tab = soup
+
+        for a in tab.select("ul.linklist.event-li li a"):
+            title = a.get_text(strip=True)
+            href = a.get("href", "")
+            if not href:
+                continue
+            if href.startswith("/"):
+                href = base + href
+            elif not href.startswith("http"):
+                href = base + "/" + href
+            if title and href:
+                items.append({"title": title, "date": None, "url": href})
+
+        print(f"[{label}] OK: {len(items)}件")
+        return {"updated": now_jst(), "items": items[:20], "error": None}
+
+    except Exception as e:
+        print(f"[{label}] ERROR: {e}", file=sys.stderr)
+        return {"updated": now_jst(), "items": [], "error": str(e)}
+
+
+# ========================================
 # ソース定義
 # ========================================
 SOURCES = [
@@ -143,9 +186,9 @@ SOURCES = [
         "output": "data/nerima-news.json",
     },
     {
-        "type": "rss",
+        "type": "scrape_event",
         "label": "nerima-events",
-        "url": "https://www.city.nerima.tokyo.jp/rss/event/rss_news.xml",
+        "url": "https://www.city.nerima.tokyo.jp/",
         "output": "data/nerima-events.json",
     },
     {
@@ -165,6 +208,8 @@ def main():
     for source in SOURCES:
         if source["type"] == "rss":
             result = fetch_rss(source)
+        elif source["type"] == "scrape_event":
+            result = scrape_event(source)
         else:
             result = scrape_nerima(source)
 
