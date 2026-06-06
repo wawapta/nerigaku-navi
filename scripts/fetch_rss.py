@@ -98,52 +98,20 @@ def scrape_nerima(source):
         soup = BeautifulSoup(html, "html.parser")
         items = []
 
-        # 練馬区の新着テーブル: <table class="list"> or <ul class="newsList">
-        # パターン1: テーブル形式
-        for row in soup.select("table.list tr, table tr"):
-            cols = row.find_all("td")
-            if len(cols) >= 2:
-                date_text = cols[0].get_text(strip=True)
-                link_tag = cols[1].find("a")
-                if link_tag:
-                    date = parse_date_jp(date_text) or date_text
-                    title = link_tag.get_text(strip=True)
-                    href = link_tag.get("href", "")
-                    if href.startswith("/"):
-                        href = base + href
-                    if title and href:
-                        items.append({"title": title, "date": date, "url": href})
-
-        # パターン2: リスト形式（dl/dt/dd）
-        if not items:
-            for dl in soup.select("dl.list, ul.newsList, .newsListArea li"):
-                date_el = dl.find(class_=re.compile(r"date|day"))
-                link_el = dl.find("a")
-                if link_el:
-                    date_text = date_el.get_text(strip=True) if date_el else ""
-                    date = parse_date_jp(date_text) or date_text
-                    title = link_el.get_text(strip=True)
-                    href = link_el.get("href", "")
-                    if href.startswith("/"):
-                        href = base + href
-                    if title and href:
-                        items.append({"title": title, "date": date, "url": href})
-
-        # パターン3: 汎用（日付っぽいテキスト隣のリンク）
-        if not items:
-            for a in soup.select("a[href]"):
-                parent = a.find_parent()
-                if not parent:
-                    continue
-                text = parent.get_text(" ", strip=True)
-                date = parse_date_jp(text)
-                if date:
-                    href = a.get("href", "")
-                    if href.startswith("/"):
-                        href = base + href
-                    title = a.get_text(strip=True)
-                    if title and href and len(title) > 3:
-                        items.append({"title": title, "date": date, "url": href})
+        # 練馬区公式サイト構造:
+        # div.newinfo-box > ul.info-list > li > span.date + span.infotxt > a
+        for li in soup.select("ul.info-list li"):
+            date_el = li.find("span", class_="date")
+            link_el = li.find("a")
+            if date_el and link_el:
+                date_text = date_el.get_text(strip=True)
+                date = parse_date_jp(date_text) or date_text
+                title = link_el.get_text(strip=True)
+                href = link_el.get("href", "")
+                if href.startswith("/"):
+                    href = base + href
+                if title and href:
+                    items.append({"title": title, "date": date, "url": href})
 
         # 重複除去・日付降順・最大20件
         seen = set()
