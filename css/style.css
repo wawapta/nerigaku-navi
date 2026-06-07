@@ -381,3 +381,31 @@ button { cursor:pointer; border:none; background:none; font:inherit; }
 .spacer-sm  { height:var(--space-sm); }
 .spacer-md  { height:var(--space-md); }
 .ext-badge::after { content:" ↗"; font-size:.8em; opacity:.55; }
+
+/* ========================================
+   お役立ち情報
+   ======================================== */
+.yakudachi-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding-bottom: var(--space-md);
+}
+.yakudachi-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 14px var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  box-shadow: var(--shadow-card);
+  border: 1.5px solid var(--color-border);
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+}
+.yakudachi-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.yakudachi-card .yc-icon { font-size: 1.8rem; flex-shrink: 0; }
+.yakudachi-card .yc-text { flex: 1; }
+.yakudachi-card .yc-title { font-weight: 800; font-size: var(--font-size-base); }
+.yakudachi-card .yc-sub { font-size: var(--font-size-xs); color: var(--color-text-sub); margin-top: 2px; }
+.yakudachi-card .yc-arrow { color: var(--color-text-muted); font-size: 1.2rem; flex-shrink: 0; }
