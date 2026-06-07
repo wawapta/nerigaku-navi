@@ -33,7 +33,7 @@
     }
     .toc-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: var(--space-xs);
     }
     .toc-btn {
@@ -202,10 +202,15 @@
       <div class="soudan-toc">
         <h2>カテゴリから探す</h2>
         <div class="toc-grid">
-          <a href="#school" class="toc-btn">📚 学校生活</a>
-          <a href="#family" class="toc-btn">👨‍👩‍👧 家庭・子育て</a>
-          <a href="#net" class="toc-btn">📱 ネット・スマホ</a>
-          <a href="#safety" class="toc-btn">🚨 安全・被害</a>
+          <a href="#school"   class="toc-btn">😟 いじめ・不登校</a>
+          <a href="#school"   class="toc-btn">📚 教育相談</a>
+          <a href="#hattatsu" class="toc-btn">🧩 発達・障害相談</a>
+          <a href="#family"   class="toc-btn">👨‍👩‍👧 子育て相談</a>
+          <a href="#family"   class="toc-btn">🆘 虐待・通告</a>
+          <a href="#ibasho"   class="toc-btn">🏡 不登校の居場所</a>
+          <a href="#net"      class="toc-btn">📱 ネット・スマホ</a>
+          <a href="#safety"   class="toc-btn">🚨 非行・犯罪・防犯</a>
+          <a href="#safety"   class="toc-btn">🚑 こどもの救急</a>
         </div>
       </div>
 
@@ -287,6 +292,60 @@
           <div class="soudan-card-hours">🕐 施設により異なります</div>
           <div class="soudan-card-links">
             <a href="https://www.city.nerima.tokyo.jp/kosodate/sodan/hiroba/" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">施設一覧を見る</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 発達・障害相談 -->
+      <section id="hattatsu" class="soudan-category" aria-labelledby="cat-hattatsu">
+        <div class="category-heading">
+          <span class="cat-icon" aria-hidden="true">🧩</span>
+          <h2 id="cat-hattatsu">発達・障害相談</h2>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">練馬区 教育支援センター（あおぞら）</div>
+          <div class="soudan-card-desc">発達障害・学習困難・特別支援に関する教育相談。在籍校と連携しながらサポート。</div>
+          <a href="tel:0359847811" class="soudan-card-phone">📞 03-5984-7811</a>
+          <div class="soudan-card-hours">🕐 月〜金 9:00〜17:00（祝日・年末年始除く）</div>
+          <div class="soudan-card-links">
+            <a href="https://www.city.nerima.tokyo.jp/kosodate/gakko/kyoikusodan/aozora.html" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">公式サイト</a>
+          </div>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">練馬区 障害者相談支援センター</div>
+          <div class="soudan-card-desc">障害のある子どもや家族の生活・福祉サービスに関する総合相談。</div>
+          <a href="tel:0359847830" class="soudan-card-phone">📞 03-5984-7830</a>
+          <div class="soudan-card-hours">🕐 月〜金 8:30〜17:00（祝日・年末年始除く）</div>
+          <div class="soudan-card-links">
+            <a href="https://www.city.nerima.tokyo.jp/hofuku/shogaifukushi/soudan/index.html" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">公式サイト</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 不登校の居場所 -->
+      <section id="ibasho" class="soudan-category" aria-labelledby="cat-ibasho">
+        <div class="category-heading">
+          <span class="cat-icon" aria-hidden="true">🏡</span>
+          <h2 id="cat-ibasho">不登校の居場所</h2>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">練馬区 教育支援センター（あおぞら）</div>
+          <div class="soudan-card-desc">不登校の子どもが通える適応指導教室。学習支援・生活リズム回復・集団活動を提供。</div>
+          <a href="tel:0359847811" class="soudan-card-phone">📞 03-5984-7811</a>
+          <div class="soudan-card-hours">🕐 月〜金 9:00〜17:00（祝日・年末年始除く）</div>
+          <div class="soudan-card-links">
+            <a href="https://www.city.nerima.tokyo.jp/kosodate/gakko/kyoikusodan/aozora.html" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">公式サイト</a>
+          </div>
+        </div>
+
+        <div class="soudan-card">
+          <div class="soudan-card-name">東京都 不登校支援ポータルサイト「はじめの一歩」</div>
+          <div class="soudan-card-desc">フリースクールや居場所の情報、支援機関の検索ができる東京都の総合サイト。</div>
+          <div class="soudan-card-links">
+            <a href="https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2023/03/31/20.html" class="link-btn web ext-icon" target="_blank" rel="noopener noreferrer">サイトを見る</a>
           </div>
         </div>
       </section>
