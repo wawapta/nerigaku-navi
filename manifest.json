@@ -1,0 +1,22 @@
+{
+  "name": "ねりがくナビ",
+  "short_name": "ねりがくナビ",
+  "description": "練馬区の学校・子育て情報を探しやすく",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f7f1",
+  "theme_color": "#2e7d3f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/images/kopren-icon.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/images/kopren-icon.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
