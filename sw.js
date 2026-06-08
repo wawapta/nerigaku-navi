@@ -1,5 +1,5 @@
 // ねりがくナビ Service Worker
-const CACHE_NAME = 'nerigaku-navi-v1';
+const CACHE_NAME = 'nerigaku-navi-v2';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
