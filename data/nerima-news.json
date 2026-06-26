@@ -1,25 +1,30 @@
 {
-  "updated": "2026-06-26T15:12:10.263382+09:00",
+  "updated": "2026-06-26T22:11:46.102570+09:00",
   "items": [
+    {
+      "title": "【重要】台風接近に伴う区立保育園の運営について",
+      "date": "2026-06-26",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/hoikuen/etc/hoiku_unei.html"
+    },
+    {
+      "title": "【練馬区教育委員会】台風7号・8号に係る対応について",
+      "date": "2026-06-26",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/oshirase/taifutaiou.html"
+    },
+    {
+      "title": "こまねり（こどもまんなかネットねりま）の登録団体を取材しました！",
+      "date": "2026-06-26",
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/nerimakyodorabo/jisshijigyo/miraichallenge/komaneri/index.html"
+    },
+    {
+      "title": "【重要】台風接近に伴う学童クラブの運営について",
+      "date": "2026-06-26",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/gakudo/gakudouoshirase.html"
+    },
     {
       "title": "台風7・8号による練馬子ども議会第1回学習会の延期について",
       "date": "2026-06-26",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/seishonen/kodomo/daiikkaiennki.html"
-    },
-    {
-      "title": "ねりまママパパてらす講座の開催予定を更新しました。",
-      "date": "2026-06-25",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/terrace.html"
-    },
-    {
-      "title": "親子で参加する「練馬こどもカフェ」（7月分）の開催一覧を更新しました。",
-      "date": "2026-06-24",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/kodomo_cafe.html"
-    },
-    {
-      "title": "【区立小中学校・幼稚園】台風第6号に係る対応状況と今後の取り組みについて",
-      "date": "2026-06-16",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/oshirase/080603.html"
     }
   ],
   "error": null
