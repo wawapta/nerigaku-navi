@@ -1,6 +1,16 @@
 {
-  "updated": "2026-07-16T07:00:56.789241+09:00",
+  "updated": "2026-07-16T14:11:23.207275+09:00",
   "items": [
+    {
+      "title": "体罰などによる子どもの身体と心への影響",
+      "date": "2026-07-16",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/taibatsu_batsu.html"
+    },
+    {
+      "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
+      "date": "2026-07-16",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomo_gyakutai_sos.html"
+    },
     {
       "title": "こまねり登録団体の取材情報を更新しました！",
       "date": "2026-07-15",
@@ -15,16 +25,6 @@
       "title": "台風7・8号による練馬子ども議会第1回学習会の延期について",
       "date": "2026-06-26",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/seishonen/kodomo/daiikkaiennki.html"
-    },
-    {
-      "title": "親子で参加する「練馬こどもカフェ」（7月分）の開催一覧を更新しました。",
-      "date": "2026-06-24",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/kodomo_cafe.html"
-    },
-    {
-      "title": "【区立小中学校・幼稚園】台風第6号に係る対応状況と今後の取り組みについて",
-      "date": "2026-06-16",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/oshirase/080603.html"
     }
   ],
   "error": null
