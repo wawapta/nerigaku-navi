@@ -1,6 +1,16 @@
 {
-  "updated": "2026-07-23T17:30:49.723200+09:00",
+  "updated": "2026-07-23T21:24:05.792190+09:00",
   "items": [
+    {
+      "title": "子どもへの虐待とは？",
+      "date": "2026-07-23",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomogyakutai_about.html"
+    },
+    {
+      "title": "子どもや子育てに関する悩みがある方は、ご相談ください",
+      "date": "2026-07-23",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/20200413.html"
+    },
     {
       "title": "親子で参加する「練馬こどもカフェ」（8月分）の開催一覧を更新しました。",
       "date": "2026-07-22",
@@ -15,16 +25,6 @@
       "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
       "date": "2026-07-16",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomo_gyakutai_sos.html"
-    },
-    {
-      "title": "こまねり登録団体の取材情報を更新しました！",
-      "date": "2026-07-15",
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/nerimakyodorabo/jisshijigyo/miraichallenge/komaneri/index.html"
-    },
-    {
-      "title": "台風7・8号による練馬子ども議会第1回学習会の延期について",
-      "date": "2026-06-26",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/seishonen/kodomo/daiikkaiennki.html"
     }
   ],
   "error": null
