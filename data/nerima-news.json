@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12T06:47:35.858272+09:00",
+  "updated": "2026-08-12T13:08:22.351779+09:00",
   "items": [
     {
       "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
@@ -17,14 +17,14 @@
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/kodomo_cafe.html"
     },
     {
-      "title": "ねりまママパパてらす講座の開催予定を更新しました。",
-      "date": "2026-08-07",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/terrace.html"
-    },
-    {
       "title": "こまねり登録団体の取材情報を更新しました！",
       "date": "2026-08-06",
       "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/nerimakyodorabo/jisshijigyo/miraichallenge/komaneri/index.html"
+    },
+    {
+      "title": "子どもへの虐待とは？",
+      "date": "2026-08-06",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomogyakutai_about.html"
     }
   ],
   "error": null
