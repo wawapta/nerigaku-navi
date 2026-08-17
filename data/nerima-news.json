@@ -1,6 +1,16 @@
 {
-  "updated": "2026-08-17T06:19:30.268240+09:00",
+  "updated": "2026-08-17T11:59:31.036647+09:00",
   "items": [
+    {
+      "title": "体罰などによる子どもの身体と心への影響",
+      "date": "2026-08-17",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/taibatsu_batsu.html"
+    },
+    {
+      "title": "児童虐待SOS～子どもを虐待から守るために～",
+      "date": "2026-08-17",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/zidougyakutaisos.html"
+    },
     {
       "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
       "date": "2026-08-12",
@@ -15,16 +25,6 @@
       "title": "親子で参加する「練馬こどもカフェ」（8月追加開催分）の開催一覧を更新しました。",
       "date": "2026-08-07",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/kodomo_cafe.html"
-    },
-    {
-      "title": "こまねり登録団体の取材情報を更新しました！",
-      "date": "2026-08-06",
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/nerimakyodorabo/jisshijigyo/miraichallenge/komaneri/index.html"
-    },
-    {
-      "title": "子どもへの虐待とは？",
-      "date": "2026-08-06",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomogyakutai_about.html"
     }
   ],
   "error": null
