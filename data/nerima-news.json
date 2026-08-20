@@ -1,6 +1,16 @@
 {
-  "updated": "2026-08-20T20:26:13.094928+09:00",
+  "updated": "2026-08-21T06:27:19.893867+09:00",
   "items": [
+    {
+      "title": "保護者講演会『聴き上手になる方法』",
+      "date": "2026-08-21",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/gakko/kyoikucenter/index/kikijyouzu.html"
+    },
+    {
+      "title": "地域子ども家庭支援センターの運営業務委託事業者を募集",
+      "date": "2026-08-21",
+      "url": "https://www.city.nerima.tokyo.jp/jigyoshamuke/jigyosha/oshirase/R9kosen_bosyu.html"
+    },
     {
       "title": "親子で参加する「練馬こどもカフェ」（9月分）の開催一覧を更新しました。",
       "date": "2026-08-19",
@@ -15,16 +25,6 @@
       "title": "児童虐待SOS～子どもを虐待から守るために～",
       "date": "2026-08-17",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/zidougyakutaisos.html"
-    },
-    {
-      "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
-      "date": "2026-08-12",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomo_gyakutai_sos.html"
-    },
-    {
-      "title": "たたかない・どならない子育てのために",
-      "date": "2026-08-12",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/tatakanai_kosodate.html"
     }
   ],
   "error": null
