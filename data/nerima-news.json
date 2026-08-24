@@ -1,6 +1,11 @@
 {
-  "updated": "2026-08-24T20:28:07.980834+09:00",
+  "updated": "2026-08-25T06:28:39.411138+09:00",
   "items": [
+    {
+      "title": "ねりまママパパてらす講座の開催予定を更新しました。",
+      "date": "2026-08-25",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/terrace.html"
+    },
     {
       "title": "子どもへの虐待とは？",
       "date": "2026-08-24",
@@ -20,11 +25,6 @@
       "title": "保護者講演会『聴き上手になる方法』",
       "date": "2026-08-21",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/gakko/kyoikucenter/index/kikijyouzu.html"
-    },
-    {
-      "title": "体罰などによる子どもの身体と心への影響",
-      "date": "2026-08-17",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/taibatsu_batsu.html"
     }
   ],
   "error": null
