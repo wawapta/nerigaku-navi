@@ -1,6 +1,16 @@
 {
-  "updated": "2026-08-24T12:03:12.366284+09:00",
+  "updated": "2026-08-24T15:58:09.809701+09:00",
   "items": [
+    {
+      "title": "子どもへの虐待とは？",
+      "date": "2026-08-24",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomogyakutai_about.html"
+    },
+    {
+      "title": "子どもや子育てに関する悩みがある方は、ご相談ください",
+      "date": "2026-08-24",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/20200413.html"
+    },
     {
       "title": "地域子ども家庭支援センターの運営業務委託事業者を募集",
       "date": "2026-08-21",
@@ -15,16 +25,6 @@
       "title": "体罰などによる子どもの身体と心への影響",
       "date": "2026-08-17",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/taibatsu_batsu.html"
-    },
-    {
-      "title": "児童虐待SOS～子どもを虐待から守るために～",
-      "date": "2026-08-17",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/zidougyakutaisos.html"
-    },
-    {
-      "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
-      "date": "2026-08-12",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomo_gyakutai_sos.html"
     }
   ],
   "error": null
