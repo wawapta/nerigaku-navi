@@ -1,6 +1,16 @@
 {
-  "updated": "2026-08-31T17:11:00.142567+09:00",
+  "updated": "2026-09-01T02:55:20.827290+09:00",
   "items": [
+    {
+      "title": "令和9年度入園の区立幼稚園児を募集します",
+      "date": "2026-09-01",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/yochien/kurituyou_R2.html"
+    },
+    {
+      "title": "ねりまママパパてらす講座の開催予定を更新しました。",
+      "date": "2026-09-01",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/terrace.html"
+    },
     {
       "title": "体罰などによる子どもの身体と心への影響",
       "date": "2026-08-31",
@@ -12,19 +22,9 @@
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/zidougyakutaisos.html"
     },
     {
-      "title": "ねりまママパパてらす講座の開催予定を更新しました。",
-      "date": "2026-08-25",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/terrace.html"
-    },
-    {
       "title": "新学期を迎える小学生へ",
       "date": "2026-08-24",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/oshirase/message1.html"
-    },
-    {
-      "title": "新学期を迎える児童生徒のために（保護者や教職員のみなさんへ）",
-      "date": "2026-08-24",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/oshirase/message3.html"
     }
   ],
   "error": null

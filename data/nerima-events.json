@@ -1,10 +1,25 @@
 {
-  "updated": "2026-08-31T17:11:01.217751+09:00",
+  "updated": "2026-09-01T02:55:21.765654+09:00",
   "items": [
+    {
+      "title": "Tokyo健康ウオーク2026（11月15日）（外部サイト）",
+      "date": null,
+      "url": "https://www.tokyo-kenkowalk.jp/"
+    },
+    {
+      "title": "防災フェスタ（9月27日）",
+      "date": null,
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/oshirase/bousaifes.html"
+    },
     {
       "title": "みどりの風 練馬薪能（9月20日）",
       "date": null,
       "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/bunka/takiginoh/takigigaiyo.html"
+    },
+    {
+      "title": "海を渡ってきた植物の物語（9月12日から10月25日・10月30日から12月13日）（外部サイト）",
+      "date": null,
+      "url": "https://www.makinoteien.jp/exhibition/"
     },
     {
       "title": "アーツ中村橋 2026―わたしとまちの記憶（9月12日から11月8日）",
@@ -27,11 +42,6 @@
       "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/bunka/museum/tenrankai/wakabayashi-terada.html"
     },
     {
-      "title": "はっけん！練馬の虫展（7月22日から8月31日）（外部サイト）",
-      "date": null,
-      "url": "https://nakazato.ces-net.jp/pg6282993.html"
-    },
-    {
       "title": "つながるカレッジねりま（外部サイト）",
       "date": null,
       "url": "https://www.collegenerima.jp/p1_1_1"
@@ -50,6 +60,16 @@
       "title": "【農業体験・マルシェ等】ねりまの農を楽しもう！",
       "date": null,
       "url": "https://www.city.nerima.tokyo.jp/kusei/koho/oshirase/nogyokanren_event.html"
+    },
+    {
+      "title": "認知症月間関連イベント",
+      "date": null,
+      "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/event/dmgekkan.html"
+    },
+    {
+      "title": "動物愛護週間関連イベント",
+      "date": null,
+      "url": "https://www.city.nerima.tokyo.jp/hokenfukushi/eisei/seikatsueisei/pet/doubutuaigosyukan.html"
     },
     {
       "title": "障害者雇用支援月間関連イベント",
