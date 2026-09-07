@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07T16:03:35.719866+09:00",
+  "updated": "2026-09-08T01:17:41.685565+09:00",
   "items": [
     {
       "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
@@ -17,14 +17,14 @@
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/terrace.html"
     },
     {
-      "title": "【学校教育支援センターからのお知らせ】9月7日（月）大雨等によるトライ・フリーマインドの閉室について（2026年09月06日16時）",
-      "date": "2026-09-06",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/oshirase/ooametoraihurimaind.html"
-    },
-    {
       "title": "令和9年度入園の区立幼稚園児を募集します",
       "date": "2026-09-01",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/yochien/kurituyou_R2.html"
+    },
+    {
+      "title": "体罰などによる子どもの身体と心への影響",
+      "date": "2026-08-31",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/taibatsu_batsu.html"
     }
   ],
   "error": null
