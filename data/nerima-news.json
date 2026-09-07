@@ -1,6 +1,16 @@
 {
-  "updated": "2026-09-07T07:43:46.613762+09:00",
+  "updated": "2026-09-07T16:03:35.719866+09:00",
   "items": [
+    {
+      "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
+      "date": "2026-09-07",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomo_gyakutai_sos.html"
+    },
+    {
+      "title": "たたかない・どならない子育てのために",
+      "date": "2026-09-07",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/tatakanai_kosodate.html"
+    },
     {
       "title": "ねりまママパパてらす講座の開催予定を更新しました。",
       "date": "2026-09-07",
@@ -15,16 +25,6 @@
       "title": "令和9年度入園の区立幼稚園児を募集します",
       "date": "2026-09-01",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/yochien/kurituyou_R2.html"
-    },
-    {
-      "title": "体罰などによる子どもの身体と心への影響",
-      "date": "2026-08-31",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/taibatsu_batsu.html"
-    },
-    {
-      "title": "児童虐待SOS～子どもを虐待から守るために～",
-      "date": "2026-08-31",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/zidougyakutaisos.html"
     }
   ],
   "error": null
