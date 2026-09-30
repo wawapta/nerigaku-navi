@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T17:06:07.533138+09:00",
+  "updated": "2026-10-01T01:41:05.165551+09:00",
   "items": [
     {
       "title": "全国都市農業フェスティバル2027 プレイベント（11月21日・22日）",
@@ -10,6 +10,11 @@
       "title": "Tokyo健康ウオーク2026（11月15日）（外部サイト）",
       "date": null,
       "url": "https://www.tokyo-kenkowalk.jp/"
+    },
+    {
+      "title": "消費生活展ねりま2026（11月7日）",
+      "date": null,
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/syouhiseikatu/syohisyakyoshitsu/seikatsuten/seikatuten2026.html"
     },
     {
       "title": "ねりおと♪フェスティバル2026（11月3日）",
@@ -70,11 +75,6 @@
       "title": "食品ロス削減月間関連イベント",
       "date": null,
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/foodlossgekkan.html"
-    },
-    {
-      "title": "認知症月間関連イベント",
-      "date": null,
-      "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/event/dmgekkan.html"
     }
   ],
   "error": null
