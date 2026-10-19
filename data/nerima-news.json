@@ -1,6 +1,11 @@
 {
-  "updated": "2026-10-19T16:22:59.987094+09:00",
+  "updated": "2026-10-20T02:20:45.414768+09:00",
   "items": [
+    {
+      "title": "ねりまママパパてらす講座の開催予定を更新しました。",
+      "date": "2026-10-19",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/terrace.html"
+    },
     {
       "title": "11月はオレンジリボン・児童虐待防止推進キャンペーン「地域で見守る みんなの子」",
       "date": "2026-10-16",
@@ -20,11 +25,6 @@
       "title": "保護者講演会『不登校からのステップ』",
       "date": "2026-10-11",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/gakko/kyoikucenter/index/futoukousuteppu.html"
-    },
-    {
-      "title": "ねりまママパパてらす講座の開催予定を更新しました。",
-      "date": "2026-10-02",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/terrace.html"
     }
   ],
   "error": null
