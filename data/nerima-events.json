@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-20T16:14:02.163140+09:00",
+  "updated": "2026-10-21T00:33:41.451684+09:00",
   "items": [
+    {
+      "title": "第20回練馬大根引っこ抜き競技大会（12月6日）",
+      "date": null,
+      "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/nogyo/hureai/daikon/hikkonukibosyuu.html"
+    },
+    {
+      "title": "ねりま漫画サロン（12月5日・6日・12日・13日）",
+      "date": null,
+      "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/bunka/oshirase/manga_tenji.html"
+    },
     {
       "title": "全国都市農業フェスティバル2027 プレイベント（11月21日・22日）",
       "date": null,
@@ -17,6 +27,11 @@
       "url": "https://www.city.nerima.tokyo.jp/kurashi/syouhiseikatu/syohisyakyoshitsu/seikatsuten/seikatuten2026.html"
     },
     {
+      "title": "アートマルシェ2026（11月7日・8日）",
+      "date": null,
+      "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/bunka/artmarche/artmarche2026.html"
+    },
+    {
       "title": "第38回練馬区伝統工芸展（11月6日から8日）",
       "date": null,
       "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/event/bunka/dentoukougeiten38.html"
@@ -30,6 +45,11 @@
       "title": "ねりすぽフェスティバル（11月3日）",
       "date": null,
       "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/nerisupo2022.html"
+    },
+    {
+      "title": "ユアサエボシと戦後アヴァンギャルドの変身寓話集（10月31日から12月27日）",
+      "date": null,
+      "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/bunka/museum/tenrankai/yuasaeboshi.html"
     },
     {
       "title": "第318回アトリウムミニステージ〈特別公演〉（10月21日）（外部サイト）",
@@ -65,11 +85,6 @@
       "title": "つながるカレッジねりま（外部サイト）",
       "date": null,
       "url": "https://www.collegenerima.jp/p1_1_1"
-    },
-    {
-      "title": "摘んで！食べて！ブドウを満喫しよう",
-      "date": null,
-      "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/nogyo/hureai/casualfarm/budou.html"
     },
     {
       "title": "【農業体験・マルシェ等】ねりまの農を楽しもう！",
