@@ -1,6 +1,11 @@
 {
-  "updated": "2026-10-21T16:09:03.701709+09:00",
+  "updated": "2026-10-22T00:50:14.728620+09:00",
   "items": [
+    {
+      "title": "子どもへの虐待とは？",
+      "date": "2026-10-21",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomogyakutai_about.html"
+    },
     {
       "title": "たたかない・どならない子育てのために",
       "date": "2026-10-21",
@@ -20,11 +25,6 @@
       "title": "11月はオレンジリボン・児童虐待防止推進キャンペーン「地域で見守る みんなの子」",
       "date": "2026-10-16",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/11gatu_campaign.html"
-    },
-    {
-      "title": "子どもへの虐待とは？",
-      "date": "2026-10-14",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomogyakutai_about.html"
     }
   ],
   "error": null
