@@ -1,6 +1,11 @@
 {
-  "updated": "2026-10-22T08:54:32.828579+09:00",
+  "updated": "2026-10-22T16:11:20.431625+09:00",
   "items": [
+    {
+      "title": "【重要・緊急】学校ホームページのメンテナンス（一時停止）について",
+      "date": "2026-10-22",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/oshirase/gakkouHPmente.html"
+    },
     {
       "title": "子どもへの虐待とは？",
       "date": "2026-10-21",
@@ -20,11 +25,6 @@
       "title": "ねりまママパパてらす講座の開催予定を更新しました。",
       "date": "2026-10-19",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/asobi/terrace.html"
-    },
-    {
-      "title": "11月はオレンジリボン・児童虐待防止推進キャンペーン「地域で見守る みんなの子」",
-      "date": "2026-10-16",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/11gatu_campaign.html"
     }
   ],
   "error": null
