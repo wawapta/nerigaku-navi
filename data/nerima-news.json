@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T09:38:09.279204+09:00",
+  "updated": "2026-10-30T17:09:15.297036+09:00",
   "items": [
     {
       "title": "体罰などによる子どもの身体と心への影響",
@@ -17,14 +17,14 @@
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomo_gyakutai_sos.html"
     },
     {
-      "title": "11月はオレンジリボン・児童虐待防止推進キャンペーン「地域で見守る みんなの子」",
-      "date": "2026-10-26",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/11gatu_campaign.html"
-    },
-    {
       "title": "こまねり（こどもまんなかネットねりま）の登録団体を取材しました！",
       "date": "2026-10-23",
       "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/nerimakyodorabo/jisshijigyo/miraichallenge/komaneri/katariba.html"
+    },
+    {
+      "title": "子どもへの虐待とは？",
+      "date": "2026-10-21",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomogyakutai_about.html"
     }
   ],
   "error": null
