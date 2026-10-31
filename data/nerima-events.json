@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T17:02:03.880833+09:00",
+  "updated": "2026-11-01T00:57:18.343998+09:00",
   "items": [
     {
       "title": "第20回練馬大根引っこ抜き競技大会（12月6日）",
@@ -20,6 +20,11 @@
       "title": "Tokyo健康ウオーク2026（11月15日）（外部サイト）",
       "date": null,
       "url": "https://www.tokyo-kenkowalk.jp/"
+    },
+    {
+      "title": "【向山庭園】秋の催し（11月14日から12月上旬）",
+      "date": null,
+      "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/annai/fukei/kouyamateien/kouyama.html"
     },
     {
       "title": "消費生活展ねりま2026（11月7日）",
@@ -85,11 +90,6 @@
       "title": "【農業体験・マルシェ等】ねりまの農を楽しもう！",
       "date": null,
       "url": "https://www.city.nerima.tokyo.jp/kusei/koho/oshirase/nogyokanren_event.html"
-    },
-    {
-      "title": "食品ロス削減月間関連イベント",
-      "date": null,
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/foodlossgekkan.html"
     }
   ],
   "error": null
