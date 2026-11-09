@@ -1,6 +1,11 @@
 {
-  "updated": "2026-11-09T09:34:34.255201+09:00",
+  "updated": "2026-11-09T18:14:48.710680+09:00",
   "items": [
+    {
+      "title": "開進第二中学校チャレンジクラス設置について",
+      "date": "2026-11-09",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/oshirase/challengeclass.html"
+    },
     {
       "title": "たたかない・どならない子育てのために",
       "date": "2026-11-04",
@@ -20,11 +25,6 @@
       "title": "子どもや子育てに関する悩みがある方は、ご相談ください",
       "date": "2026-10-28",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/20200413.html"
-    },
-    {
-      "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
-      "date": "2026-10-26",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomo_gyakutai_sos.html"
     }
   ],
   "error": null
