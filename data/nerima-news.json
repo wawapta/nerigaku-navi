@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-10T06:18:14.001143+09:00",
+  "updated": "2026-11-10T18:20:38.630112+09:00",
   "items": [
+    {
+      "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
+      "date": "2026-11-10",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomo_gyakutai_sos.html"
+    },
+    {
+      "title": "子どもへの虐待とは？",
+      "date": "2026-11-10",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomogyakutai_about.html"
+    },
     {
       "title": "開進第二中学校チャレンジクラス設置について",
       "date": "2026-11-09",
@@ -15,16 +25,6 @@
       "title": "児童虐待SOS～子どもを虐待から守るために～",
       "date": "2026-11-04",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/zidougyakutaisos.html"
-    },
-    {
-      "title": "体罰などによる子どもの身体と心への影響",
-      "date": "2026-10-28",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/taibatsu_batsu.html"
-    },
-    {
-      "title": "子どもや子育てに関する悩みがある方は、ご相談ください",
-      "date": "2026-10-28",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/20200413.html"
     }
   ],
   "error": null
