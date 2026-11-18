@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-18T11:44:55.652810+09:00",
+  "updated": "2026-11-19T00:13:23.685060+09:00",
   "items": [
+    {
+      "title": "子どもや子育てに関する悩みがある方は、ご相談ください",
+      "date": "2026-11-18",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/20200413.html"
+    },
+    {
+      "title": "児童虐待SOS～子どもを虐待から守るために～",
+      "date": "2026-11-18",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/zidougyakutaisos.html"
+    },
     {
       "title": "親子で参加する「練馬こどもカフェ』（12月分）の開催一覧を更新しました。",
       "date": "2026-11-18",
@@ -15,16 +25,6 @@
       "title": "子どもへの虐待とは？",
       "date": "2026-11-10",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomogyakutai_about.html"
-    },
-    {
-      "title": "開進第二中学校チャレンジクラス設置について",
-      "date": "2026-11-09",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/oshirase/challengeclass.html"
-    },
-    {
-      "title": "たたかない・どならない子育てのために",
-      "date": "2026-11-04",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/tatakanai_kosodate.html"
     }
   ],
   "error": null
