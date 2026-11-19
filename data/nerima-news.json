@@ -1,6 +1,11 @@
 {
-  "updated": "2026-11-19T00:13:23.685060+09:00",
+  "updated": "2026-11-19T11:18:21.664798+09:00",
   "items": [
+    {
+      "title": "区立小・中学校の入学式・卒業式、始業式・終業式および長期休業（春休み、夏休み、冬休み）の日程",
+      "date": "2026-11-19",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kyoiku/oshirase/nyuugakusikitou.html"
+    },
     {
       "title": "子どもや子育てに関する悩みがある方は、ご相談ください",
       "date": "2026-11-18",
@@ -20,11 +25,6 @@
       "title": "（子どものみなさんへ）こんなことがあったら、でんわしてね",
       "date": "2026-11-10",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomo_gyakutai_sos.html"
-    },
-    {
-      "title": "子どもへの虐待とは？",
-      "date": "2026-11-10",
-      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kodomogyakutai_about.html"
     }
   ],
   "error": null
